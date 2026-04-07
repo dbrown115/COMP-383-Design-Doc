@@ -1,5 +1,0 @@
-bash Install_ANI.sh
-source ~/.bashrc
-micromamba activate ani
-
-python Run_mtb.py

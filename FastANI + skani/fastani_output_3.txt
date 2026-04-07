@@ -1,9 +1,0 @@
-/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	100	1451	1452
-/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	99.7137	1416	1452
-/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	99.6221	1391	1452
-/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	100	1486	1486
-/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	99.6949	1401	1486
-/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	99.5954	1384	1486
-/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	100	1470	1470
-/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030574935.1_ASM3057493v1_genomic.fna	99.7377	1411	1470
-/home/akawamleh/ANI_project/myco_genomes/GCF_051294345.1_ASM5129434v1_genomic.fna	/home/akawamleh/ANI_project/myco_genomes/GCF_030566105.1_ASM3056610v1_genomic.fna	99.7189	1403	1470
