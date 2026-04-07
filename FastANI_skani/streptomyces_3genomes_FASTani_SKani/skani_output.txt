@@ -1,0 +1,4 @@
+Ref_file	Query_file	ANI	Align_fraction_ref	Align_fraction_query	Ref_name	Query_name
+streptomyces_3genomes/GCF_000772045.1_ASM77204v1_genomic.fna	streptomyces_3genomes/GCF_000772045.1_ASM77204v1_genomic.fna	100.00	100.00	100.00	NZ_CP009754.1 Streptomyces sp. CCM_MD2014 chromosome, complete genome	NZ_CP009754.1 Streptomyces sp. CCM_MD2014 chromosome, complete genome
+streptomyces_3genomes/GCF_009789635.1_ASM978963v1_genomic.fna	streptomyces_3genomes/GCF_009789635.1_ASM978963v1_genomic.fna	100.00	100.00	100.00	NZ_CP046905.1 Streptomyces sp. QHH-9511 chromosome, complete genome	NZ_CP046905.1 Streptomyces sp. QHH-9511 chromosome, complete genome
+streptomyces_3genomes/GCF_026153355.1_ASM2615335v1_genomic.fna	streptomyces_3genomes/GCF_026153355.1_ASM2615335v1_genomic.fna	100.00	100.00	100.00	NZ_CP110636.1 Streptomyces endophytica strain HNM0140 chromosome, complete genome	NZ_CP110636.1 Streptomyces endophytica strain HNM0140 chromosome, complete genome
