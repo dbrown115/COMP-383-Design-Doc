@@ -3,8 +3,8 @@ import os
 import pandas as pd
 
 # ====== PATHS ======
-genome_dir = "/home/akawamleh/ANI_project/myco_genomes"
-output_dir = "/home/akawamleh/ANI_project/results"
+genome_dir = "mtb_3genomes"
+output_dir = "mtb_3genomes_ani"
 
 os.makedirs(output_dir, exist_ok=True)
 
