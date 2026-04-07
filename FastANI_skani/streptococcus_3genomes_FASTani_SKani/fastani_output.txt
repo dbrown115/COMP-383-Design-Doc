@@ -1,0 +1,5 @@
+streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	100	717	720
+streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	98.8468	644	720
+streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	100	677	679
+streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	98.9089	641	679
+streptococcus_3genomes/GCF_000006785.2_ASM678v2_genomic.fna	streptococcus_3genomes/GCF_000006785.2_ASM678v2_genomic.fna	100	617	617

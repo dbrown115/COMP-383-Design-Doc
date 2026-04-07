@@ -1,0 +1,3 @@
+mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna
+mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna
+mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna

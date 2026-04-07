@@ -1,0 +1,9 @@
+mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	100	1467	1467
+mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	99.8719	1423	1467
+mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	99.8713	1434	1467
+mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	100	1441	1458
+mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	99.9886	1435	1458
+mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	99.8674	1428	1458
+mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	100	1444	1457
+mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	mtb_3genomes/GCF_000009445.1_ASM944v1_genomic.fna	99.9842	1437	1457
+mtb_3genomes/GCF_000010685.1_ASM1068v1_genomic.fna	mtb_3genomes/GCF_000008585.1_ASM858v1_genomic.fna	99.8633	1439	1457
