@@ -1,0 +1,4 @@
+micromamba activate ani
+python Run_mtb_dashing.py
+python Run_streptococcus_dashing.py
+python Run_streptomyces_dashing.py

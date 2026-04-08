@@ -1,0 +1,6 @@
+#Dashing2 Symmetric pairwise Output
+#Dashing2Options: Dashing2Options;k:32;parsebyfile;trimchr;sketchsize:1024;sketchtype:onepermsetsketch;Fastx;canon
+#Sources	/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000006785.2_ASM678v2_genomic.fna
+/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000006885.1_ASM688v1_genomic.fna	-	0.61621094	0
+/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000007045.1_ASM704v1_genomic.fna	-	-	0.0009765625
+/home/akawamleh/Dashing2/streptococcus_3genomes/GCF_000006785.2_ASM678v2_genomic.fna	-	-	-
