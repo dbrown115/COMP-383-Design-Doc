@@ -4,7 +4,7 @@ The following sections show how to run the different ANI tools to compare differ
 
 ---
 ## Tools
-### ANIb and ANIm
+## ANIb and ANIm
 To use ANIb and ANIm you would need to install conda. To install conda follow the instructions below: 
 1) go to the miniconda website and download the following packaeg for macOS or Windows (https://www.anaconda.com/docs/getting-started/miniconda/install/overview)
 2) for a mac you will have to run the command curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh in your terminal 
@@ -35,7 +35,25 @@ bash ~/Miniconda3-latest-MacOSX-arm64.sh
 
 conda init --> yes 
 
+```bash
+conda create --name pyani_env
+```
 
+```bash
+conda activte pyani_env
+```
+
+At this point your base should have changed to pyani_env
+
+```bash
+conda config --add channels conda-forg
+conda config --add channels
+conda install pyani -y
+```
+
+```bash
+conda install pyani -y
+```
 
 
 ### OrthoANI
