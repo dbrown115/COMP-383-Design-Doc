@@ -15,7 +15,7 @@ To use ANIb and ANIm you would need to install conda. To install conda follow th
 7) then run conda activate pyani_env in your terminal and you should see that you base changed to pyani_env
 8) Then install the necessary channels that we need to run pyANI
 9) run conda config --add channels conda-forge
-10) run conda config --add channles bioconda
+10) run conda config --add channels bioconda
 11) run conda config --add channels defaults
 12) run conda install pyani -y
 13) you can verify that the package installed by running average_nucleotide_identity.py --help (this is a built in function for the pyani package)
