@@ -6,16 +6,31 @@ The following sections show how to run the different ANI tools to compare differ
 ## Tools
 ### ANIb and ANIm
 To use ANIb and ANIm you would need to install conda. To install conda follow the instructions below: 
-1) open up the terminal and run: bash Miniconda3-latest-Linux-x86_64.sh
-2) It will prompt you if you want to initialize with conda init, select Yes (Y)
-3) Once it is done installing you now have to create the pyANI environment
-4) run the command conda create --name pyani_env
-5) then run conda activate pyani_env in your terminal and you should see that you base changed to pyani_env
-6) Then install the necessary channels that we need to run pyANI
-7) run conda config --add channels defaults
-8) run conda config --add channles bioconda
+1) go to the miniconda website and download the following packaeg for macOS or Windows (https://www.anaconda.com/docs/getting-started/miniconda/install/overview)
+2) for a mac you will have to run the command curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh in your terminal 
+3) then run: bash ~/Miniconda3-latest-MacOSX-arm64.sh
+4) It will prompt you if you want to initialize with conda init, select Yes (Y)
+5) Once it is done installing you now have to create the pyANI environment
+6) run the command conda create --name pyani_env
+7) then run conda activate pyani_env in your terminal and you should see that you base changed to pyani_env
+8) Then install the necessary channels that we need to run pyANI
 9) run conda config --add channels conda-forge
-10) run conda install pyani - y
+10) run conda config --add channles bioconda
+11) run conda config --add channels defaults
+12) run conda install pyani -y
+13) you can verify that the package installed by running average_nucleotide_identity.py --help (this is a built in function for the pyani package)
+
+Step by step instructions are also listed below: 
+
+### Installation
+Follow the steps as shown on the miniconda installation website (https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install) and as also listed here: 
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+```
+
+```bash
+bash ~/Miniconda3-latest-MacOSX-arm64.sh
+```
 
 ### OrthoANI
 
