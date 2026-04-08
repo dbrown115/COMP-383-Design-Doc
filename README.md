@@ -24,14 +24,63 @@ As a workaround to prevent this issue from recurring, we recommend disabling aut
 For more information, visit:
 https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
 
-### FastANI
+# ANI Tools: FastANI + skani and Dashing 2
 
-Visit our JSON Lines data report documentation page:
-https://www.ncbi.nlm.nih.gov/datasets/docs/v2/tutorials/working-with-jsonl-data-reports/
+This repository contains scripts for computing Average Nucleotide Identity (ANI) across three organisms: *Mycobacterium tuberculosis*, *Streptococcus*, and *Streptomyces* using FastANI, skani, and Dashing 2.
 
-### SkANI
+---
 
-NCBI Datasets is a resource that lets you easily gather data from across NCBI databases. Find and download gene, transcript, protein and genome sequences, annotation and metadata.
+## FastANI + skani
+
+### Installation
+Run the installation script to set up the `ani` conda environment with FastANI and skani:
+```bash
+bash Install_ANI.sh
+source ~/.bashrc
+```
+
+`source ~/.bashrc` reloads your terminal configuration so that micromamba and the newly installed tools are recognized in your current session.
+
+### Usage
+Activate the environment and run the desired script:
+```bash
+micromamba activate ani
+python Run_mtb.py
+python Run_streptococcus.py
+```
+
+### Input
+Each script expects a folder of `.fna` genome files. The script will automatically grab the first 3 genomes from the specified directory.
+
+### Output
+Results are saved to the specified output directory:
+- `fastani_output.txt` — tab-separated file with columns: Genome1, Genome2, ANI, Fragments matched, Total fragments
+- `skani_output.txt` — tab-separated file with columns: Ref_file, Query_file, ANI, Align_fraction_ref, Align_fraction_query
+
+---
+
+## Dashing 2
+
+### Installation
+Run the installation script inside your existing `ani` environment:
+```bash
+micromamba activate ani
+bash Install_Dashing2.sh
+```
+
+### Usage
+```bash
+micromamba activate ani
+python Run_mtb_dashing.py
+python Run_streptococcus_dashing.py
+python Run_streptomyces_dashing.py
+```
+
+### Input
+Each script expects a folder of `.fna` genome files. The script will automatically grab the first 3 genomes from the specified directory.
+
+### Output
+Results are saved to the specified output directory as `dashing2_output.txt` — a symmetric pairwise similarity matrix where each value represents the Jaccard similarity between two genomes.
 
 ### MASH
 
@@ -40,7 +89,6 @@ https://www.ncbi.nlm.nih.gov/datasets/docs/
 
 ### SourMASH 
 
-### Dashing 2
 ---
 
 National Center for Biotechnology Information
