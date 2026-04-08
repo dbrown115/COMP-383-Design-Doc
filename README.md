@@ -3,6 +3,18 @@
 The following sections show how to run the different ANI tools to compare different .fna files within 3 genomes: streptococcus, streptomyces, and mycobacterium. Scores with a 
 
 ---
+**##Installation of micromamba for FastANI, skani, and Dashing2
+**
+'''bash
+cd ~
+
+mkdir -p ~/bin
+
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj -C ~ bin/micromamba
+
+~/bin/micromamba shell init -s bash
+'''
+
 ## Tools
 ## ANIb and ANIm
 To use ANIb and ANIm you would need to install conda. To install conda follow the instructions below: 
@@ -66,6 +78,8 @@ https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
 
 
 ---
+
+
 
 ## FastANI + skani
 
