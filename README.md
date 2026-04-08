@@ -63,9 +63,7 @@ As a workaround to prevent this issue from recurring, we recommend disabling aut
 For more information, visit:
 https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
 
-# ANI Tools: FastANI + skani and Dashing 2
 
-This repository contains scripts for computing Average Nucleotide Identity (ANI) across three organisms: *Mycobacterium tuberculosis*, *Streptococcus*, and *Streptomyces* using FastANI, skani, and Dashing 2.
 
 ---
 
