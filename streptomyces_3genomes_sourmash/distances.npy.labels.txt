@@ -1,0 +1,3 @@
+/home/amathew6/ANIProject/streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna
+/home/amathew6/ANIProject/streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna
+/home/amathew6/ANIProject/streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna
