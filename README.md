@@ -1,7 +1,26 @@
 # How to Run ANI Tools
 
 The following sections show how to run the different ANI tools to compare different .fna files within 3 genomes: streptococcus, streptomyces, and mycobacterium. Scores with a 
+---
 
+## Downloading Genome Files
+To use the ANI tools in this repository, you will first need to download the genome files. Clone the full repository using the following command:
+
+```bash
+bashgit clone https://github.com/dbrown115/COMP-383-Design-Doc.git
+```
+
+This will create a local copy of the repository. Navigate into it:
+```bash
+bashcd COMP-383-Design-Doc
+```
+
+The genome files are organized into three folders:
+```bash
+mtb_3genomes/
+streptococcus_3genomes/
+streptomyces_3genomes/
+```
 ---
 ## Installation of micromamba for FastANI, skani, and Dashing2
 ```bash
