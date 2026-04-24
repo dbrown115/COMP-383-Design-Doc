@@ -1,0 +1,9 @@
+streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	100	3376	3382
+streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	83.9922	1826	3382
+streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	81.2087	1413	3382
+streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	100	2805	2848
+streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	81.4666	1411	2848
+streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	81.1942	1405	2848
+streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	100	3036	3039
+streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	84.0818	1812	3039
+streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	81.4457	1417	3039

@@ -1,0 +1,4 @@
+Ref_file	Query_file	ANI	Align_fraction_ref	Align_fraction_query	Ref_name	Query_name
+streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	streptomyces_3genomes/GCF_000009765.2_ASM976v2_genomic.fna	100.00	100.00	100.00	NC_003155.5 Streptomyces avermitilis MA-4680 = NBRC 14893, complete sequence	NC_003155.5 Streptomyces avermitilis MA-4680 = NBRC 14893, complete sequence
+streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	streptomyces_3genomes/GCF_000010605.1_ASM1060v1_genomic.fna	100.00	100.00	100.00	NC_010572.1 Streptomyces griseus subsp. griseus NBRC 13350, complete sequence	NC_010572.1 Streptomyces griseus subsp. griseus NBRC 13350, complete sequence
+streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	streptomyces_3genomes/GCF_000091305.1_ASM9130v1_genomic.fna	100.00	100.00	100.00	NC_013929.1 Streptomyces scabiei 87.22, complete sequence	NC_013929.1 Streptomyces scabiei 87.22, complete sequence
