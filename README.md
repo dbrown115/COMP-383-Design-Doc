@@ -211,6 +211,10 @@ Results are saved to the specified output directory as `dashing2_output.txt` —
 
 ### MASH
 
+conda create -n mash_env -y
+conda activate mash_env
+conda install -c bioconda mash -y
+
 Visit the NCBI Datasets documentation pages:
 https://www.ncbi.nlm.nih.gov/datasets/docs/
 
