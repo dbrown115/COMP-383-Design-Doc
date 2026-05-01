@@ -133,14 +133,23 @@ Note: The code might take some time to run, but it will eventually generate resu
 These results generate true ANI scores 
 
 ### ANIb
+steps to install:
+1. conda create -n ani_env
+2. conda activate ani_env
+3. conda install -c bioconda pyani
+   
 
-
-## OrthoANI
+### OrthoANI
 
 We have identified a bug affecting Mac Safari users. When downloading data from the NCBI Datasets web interface, you may see only this README file after the download has completed (while other files appear to be missing).
 As a workaround to prevent this issue from recurring, we recommend disabling automatic zip archive extraction in Safari until Apple releases a bug fix.
 For more information, visit:
 https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
+
+Steps to install: 
+1. conda create -n orthoani_env
+2. conda activate orthoani_env
+3. conda install -c bioconda blast -y
 
 
 
