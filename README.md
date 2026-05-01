@@ -413,6 +413,7 @@ This will output the results in the folder streptococcus_SourMASH_results
 ---
 
 References
+
 Baker DN, Langmead B. Dashing: fast and accurate genomic distances with HyperLogLog. Genome Biol. 2019 Dec 4;20(1):265. doi: 10.1186/s13059-019-1875-0. PMID: 31801633; PMCID: PMC6892282.
 
 Chung NC, Miasojedow B, Startek M, Gambin A. Jaccard/Tanimoto similarity test and estimation methods for biological presence-absence data. BMC Bioinformatics. 2019 Dec 24;20(Suppl 15):644. doi: 10.1186/s12859-019-3118-5. PMID: 31874610; PMCID: PMC6929325.
