@@ -106,7 +106,7 @@ The steps below show how to run ANIb with three test genomes in the genera *Myco
 
 Below is an in depth step by step run of how to test ANIb with the *Mycobacterium* genomes. The steps for the other two genera follow a very similar style with slight changes, so they display a very broad overview of how to test ANIb.
 
-# running ANIb with *Mycobacterium*, *Streptococcus*, and *Streptomyces* genomes
+### running ANIb with *Mycobacterium*, *Streptococcus*, and *Streptomyces* genomes
 After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
 
 ```bash
