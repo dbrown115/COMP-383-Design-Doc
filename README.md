@@ -223,7 +223,7 @@ cd COMP-383-Design-Doc
 ```
 
 ```bash
-cd ANIb/runanim_streptomyces.py
+cd ANIm/runanim_streptomyces.py
 ```
 
 The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptomyces_3genomes"
@@ -243,7 +243,7 @@ cd COMP-383-Design-Doc
 ```
 
 ```bash
-cd ANIb/runanim_streptococcus.py
+cd ANIm/runanim_streptococcus.py
 ```
 
 The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptococcus_3genomes"
