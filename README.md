@@ -139,7 +139,7 @@ These results generate true ANI scores.
 To test the ANIb tool for Streptoccocus and Streptomyces follow the same instructions as above except change where input and output to the correct paths for each respective species. 
 
 ### running ANIb for *Streptomyces* genomes
-For *Streptomyces* the following changes should be made to the code: 
+For *Streptomyces*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code: 
 
 ```bash
 cd ANIb/runanib_streptomyces.py
@@ -151,8 +151,14 @@ The output directory's path should change to "/home/username/COMP-383-Design-Doc
 
 The final change should occur with the line that starts with "df" in the script and the path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptomyces_ANIb_results/ANIb_percentage_identity.tab" with you respective username 
 
+Once those changes are made run the script by running the following command: 
+
+```bash
+python runanib_streptomyces.py
+```
+
 ### running ANIb for *Streptococcus* genomes
-For *Streptococcus* genomes the following changes should be made to the code: 
+For *Streptococcus*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code:
 
 ```bash
 cd ANIb/runanib_streptococcus.py
@@ -163,6 +169,12 @@ The input directory's path should be changed to "/home/username/COMP-383-Design-
 The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptococcus_ANIb_results" with your respective username 
 
 The final change should occur with the line that starts with "df" in the script and the path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptococcus_ANIb_results/ANIb_percentage_identity.tab" with you respective username 
+
+Once those changes are made run the script by running the following command: 
+
+```bash
+python runanib_streptococcus.py
+``
 
 ### OrthoANI
 
