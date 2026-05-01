@@ -132,11 +132,57 @@ Note: The code might take some time to run, but it will eventually generate resu
 
 These results generate true ANI scores 
 
-### ANIb
-steps to install:
-1. conda create -n ani_env
-2. conda activate ani_env
-3. conda install -c bioconda pyani
+## ANIb and ANIm
+ANIb is a BLASTn based ANI tool to find average nucleotide identity between different genomes. ANIm is a MUMmer based ANI tool to find average nucleotide identity between different genomes.
+
+The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*. These steps will run assuming you have already cloned the repo (refer to Clone the Repo if you have not already done this)
+
+Below is an in depth step by step run of how to test ANIb with the *Mycobacterium* genomes. The steps for the other two genera follow a very similar style with slight changes, so they display a very broad overview of how to test ANIb.
+
+# running ANIb with *Mycobacterium*, *Streptococcus*, and *Streptomyces* genomes
+After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
+
+```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
+cd ANIb/runanib_mtb.py
+```
+
+Once you're in the runanib_mtb.py script, you will have to change the input directory to where the three genomes we are using are stored, and also change the output directory. These changes will have to be made on lines 6,7, and 26 of the script. See photo below for specific lines of code you will need to hardcode: 
+
+<img width="976" height="432" alt="Screen Shot 2026-05-01 at 2 49 05 PM" src="https://github.com/user-attachments/assets/9cc05070-1c88-440c-a652-b396ef19f7fd" />
+
+The input directory, line 6's, path should change to "/home/username/COMP-383-Design-Doc/genomes/mtb_3genomes" with your respective username
+
+The output directory, line 7's, path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results" with your respective username 
+
+Line 26's path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results/ANIb_percentage_identity.tab" with your respective username
+
+Once you have edited these lines of code, you are ready to run the code by running the following command: 
+```bash
+python runanib_mtb.py
+```
+
+Note: The code might take some time to run, but it will eventually generate results directly in the terminal, as well as in your file called mtb_ANIb_results
+
+These results generate true ANI scores. 
+
+To test the ANIb tool for Streptoccocus and Streptomyces follow the same instructions as above except change where input and output to the correct paths for each respective species. 
+
+### running ANIb for *Streptomyces* genomes
+For *Streptomyces* the following changes should be made to the code: 
+
+```bash
+cd ANIb/runanib_streptomyces.py
+```
+
+The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptomyces_3genomes"
+
+The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptomyces_ANIb_results" with your respective username 
+
+The final change should occur with the line that starts with "df" in the script and the path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptomyces_ANIb_results/ANIb_percentage_identity.tab" with you respective username 
    
 
 ### OrthoANI
