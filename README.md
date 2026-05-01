@@ -7,12 +7,12 @@ The following sections show how to run the different ANI tools to compare differ
 To use the ANI tools in this repository, you will first need to download the genome files. Clone the full repository using the following command:
 
 ```bash
-bashgit clone https://github.com/dbrown115/COMP-383-Design-Doc.git
+bash git clone https://github.com/dbrown115/COMP-383-Design-Doc.git
 ```
 
 This will create a local copy of the repository. Navigate into it:
 ```bash
-bashcd COMP-383-Design-Doc
+bash cd COMP-383-Design-Doc
 ```
 
 The genome files are organized into three folders:
@@ -32,6 +32,35 @@ curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj -C ~ b
 
 ~/bin/micromamba shell init -s bash
 ```
+
+## Installation of conda for ANIb, ANIm, SourMASH, MASH, and OrthoANI
+To use these different tools, you will have to intsall miniconda onto your terminal. To install miniconda follow the instructions at this link: https://www.anaconda.com/docs/getting-started/miniconda/install/overview
+
+After you have installed miniconda onto your mac, you should be ready to create your different environments.
+
+The environment you will need to activate to run ANIb and ANIm is the pyani_env. Follow the insturctions below to activate this environemtn in your terminal.
+
+```bash
+conda create --name pyani_env
+```
+
+```bash
+conda activate pyani_env
+```
+
+After activating your terminal you should see that your (base) has changed to (pyani_env) as seen below:
+<img width="402" height="43" alt="Screen Shot 2026-05-01 at 9 09 01 AM" src="https://github.com/user-attachments/assets/9a296dab-c16a-4d26-8be5-d9322adfeada" />
+
+It is necessary to activate three channels in the pyani_env to run the ANI tools. Follow the steps below: 
+
+```bash
+conda config --ad channels conda-forge
+conda config --add channels bioconda
+conda config --add channels defaults
+conda install pyani -y
+```
+
+Once you have added all your channels and installed pyani, you should be ready to test your ANIb and ANIm tools (refer to the section below labelled ANIb and ANIm)
 
 ## Tools
 ## ANIb and ANIm
