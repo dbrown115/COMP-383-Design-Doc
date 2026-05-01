@@ -109,9 +109,9 @@ ANIb is a BLASTn based ANI tool to find average nucleotide identity between diff
 
 The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*. These steps will run assuming you have already cloned the repo (refer to Clone the Repo if you have not already done this)
 
-Below is an in depth step by step run of how to test ANIb with the *Mycobacterium* genomes. The steps for the other two genera follow a very similar style with slight changes, so they display a very broad overview of how to test ANIb.
+Below is an in depth step by step run of how to test ANIb and ANIm with the *Mycobacterium* genomes. The steps for the other two genera follow a very similar style with slight changes, so they display a very broad overview of how to test ANIb.
 
-### running ANIb with *Mycobacterium*, *Streptococcus*, and *Streptomyces* genomes
+### running ANIb with *Mycobacterium* genomes
 After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
 
 ```bash
@@ -141,7 +141,7 @@ Note: The code might take some time to run, but it will eventually generate resu
 
 These results generate true ANI scores. 
 
-To test the ANIb tool for Streptoccocus and Streptomyces follow the same instructions as above except change where input and output to the correct paths for each respective species. 
+To test the ANIb tool for *Streptoccocus* and *Streptomyces* follow the same instructions as above except change where input and output to the correct paths for each respective species. 
 
 ### running ANIb for *Streptomyces* genomes
 For *Streptomyces*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code: 
@@ -188,6 +188,74 @@ Once those changes are made run the script by running the following command:
 ```bash
 python runanib_streptococcus.py
 ```
+### running ANIm for *Mycobacterium* genomes
+After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
+
+```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
+cd ANIm/runanim_mtb.py
+```
+
+Once you're in the runanim_mtb.py script, you will have to change the input directory to where the three genomes we are using are stored, and also change the output directory. These changes will have to be made on lines 6 and 7 of the script. See photo below for specific lines of code you will need to hardcode: 
+<img width="876" height="151" alt="Screen Shot 2026-05-01 at 3 46 20 PM" src="https://github.com/user-attachments/assets/bbb88422-42ec-415f-a66c-48ffd0fb1ad5" />
+
+The input directory, line 6's, path should change to "/home/username/COMP-383-Design-Doc/genomes/mtb_3genomes" with your respective username
+
+The output directory, line 7's, path should change to "/home/username/COMP-383-Design-Doc/ANIm/mtb_ANIm_results" with your respective username 
+
+Once you have edited these lines of code, you are ready to run the code by running the following command: 
+```bash
+python runanim_mtb.py
+```
+
+Note: The code might take some time to run, but it will eventually generate results directly in the terminal, as well as in your file called mtb_ANIm_results
+
+These results generate true ANI scores.
+
+### running ANIm for *Streptomyces* genomes
+For *Streptomyces*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code: 
+
+```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
+cd ANIb/runanim_streptomyces.py
+```
+
+The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptomyces_3genomes"
+
+The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIm/streptomyces_ANIm_results" with your respective username 
+
+Once those changes are made run the script by running the following command: 
+
+```bash
+python runanim_streptomyces.py
+```
+### running ANIm for *Streptococcus*
+For *Streptococcus*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code:
+
+```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
+cd ANIb/runanim_streptococcus.py
+```
+
+The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptococcus_3genomes"
+
+The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIm/streptococcus_ANIm_results" with your respective username 
+
+Once those changes are made run the script by running the following command: 
+
+```bash
+python runanim_streptococcus.py
+```
+
 
 ### OrthoANI
 
