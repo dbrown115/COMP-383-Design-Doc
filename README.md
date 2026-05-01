@@ -142,6 +142,10 @@ To test the ANIb tool for Streptoccocus and Streptomyces follow the same instruc
 For *Streptomyces*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code: 
 
 ```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
 cd ANIb/runanib_streptomyces.py
 ```
 
@@ -159,6 +163,10 @@ python runanib_streptomyces.py
 
 ### running ANIb for *Streptococcus* genomes
 For *Streptococcus*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code:
+
+```bash
+cd COMP-383-Design-Doc
+```
 
 ```bash
 cd ANIb/runanib_streptococcus.py
