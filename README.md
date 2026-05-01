@@ -147,9 +147,10 @@ For more information, visit:
 https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
 
 Steps to install: 
-1. conda create -n orthoani_env
-2. conda activate orthoani_env
-3. conda install -c bioconda blast -y
+1. install blast
+2. conda create -n orthoani_env
+3. conda activate orthoani_env
+4. conda install -c bioconda blast -y
 
 
 
@@ -210,6 +211,7 @@ Each script expects a folder of `.fna` genome files. The script will automatical
 Results are saved to the specified output directory as `dashing2_output.txt` — a symmetric pairwise similarity matrix where each value represents the Jaccard similarity between two genomes.
 
 ### MASH
+Mash produces distance values that approximate ANI
 
 conda create -n mash_env -y
 conda activate mash_env
