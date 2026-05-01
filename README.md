@@ -98,39 +98,6 @@ conda install -c bioconda pyani dashing
 Once you have added all your channels and installed bioconda pyani dashing, you should be ready to test your sourMASH tools (refer to the section below labelled sourMASH)
 
 ## Tools to Find Different ANI scores
-## ANIb and ANIm
-ANIb is a BLASTn based ANI tool to find average nucleotide identity between different genomes. ANIm is a MUMmer based ANI tool to find average nucleotide identity between different genomes.
-
-The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*. These steps will run assuming you have already cloned the repo (refer to Clone the Repo if you have not already done this)
-
-After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
-
-```bash
-cd COMP-383-Design-Doc
-```
-
-```bash
-cd ANIb/runanib_mtb.py
-```
-
-Once you're in the runanib_mtb.py script, you will have to change the input directory to where the three genomes we are using are stored, and also change the output directory. These changes will have to be made on lines 6,7, and 26 of the script. See photo below for specific lines of code you will need to hardcode: 
-
-<img width="976" height="432" alt="Screen Shot 2026-05-01 at 2 49 05 PM" src="https://github.com/user-attachments/assets/9cc05070-1c88-440c-a652-b396ef19f7fd" />
-
-The input directory, line 6's, path should change to "/home/username/COMP-383-Design-Doc/genomes/mtb_3genomes" with your respective username
-
-The output directory, line 7's, path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results" with your respective username 
-
-Line 26's path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results/ANIb_percentage_identity.tab" with your respective username
-
-Once you have edited these lines of code, you are ready to run the code by running the following command: 
-```bash
-python runanib_mtb.py
-```
-
-Note: The code might take some time to run, but it will eventually generate results directly in the terminal, as well as in your file called mtb_ANIb_results
-
-These results generate true ANI scores 
 
 ## ANIb and ANIm
 ANIb is a BLASTn based ANI tool to find average nucleotide identity between different genomes. ANIm is a MUMmer based ANI tool to find average nucleotide identity between different genomes.
@@ -183,7 +150,19 @@ The input directory's path should be changed to "/home/username/COMP-383-Design-
 The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptomyces_ANIb_results" with your respective username 
 
 The final change should occur with the line that starts with "df" in the script and the path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptomyces_ANIb_results/ANIb_percentage_identity.tab" with you respective username 
-   
+
+### running ANIb for *Streptococcus* genomes
+For *Streptococcus* genomes the following changes should be made to the code: 
+
+```bash
+cd ANIb/runanib_streptococcus.py
+```
+
+The input directory's path should be changed to "/home/username/COMP-383-Design-Doc/genomes/streptococcus_3genomes"
+
+The output directory's path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptococcus_ANIb_results" with your respective username 
+
+The final change should occur with the line that starts with "df" in the script and the path should change to "/home/username/COMP-383-Design-Doc/ANIb/streptococcus_ANIb_results/ANIb_percentage_identity.tab" with you respective username 
 
 ### OrthoANI
 
