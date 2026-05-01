@@ -165,6 +165,7 @@ Once those changes are made run the script by running the following command:
 ```bash
 python runanib_streptomyces.py
 ```
+This will eventually generate results directly in the terminal, as well as in your file called streptomyces_ANIb_results
 
 ### running ANIb for *Streptococcus* genomes
 For *Streptococcus*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code:
@@ -188,6 +189,9 @@ Once those changes are made run the script by running the following command:
 ```bash
 python runanib_streptococcus.py
 ```
+
+This will eventually generate results directly in the terminal, as well as in your file called streptococcus_ANIb_results
+
 ### running ANIm for *Mycobacterium* genomes
 After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
 
@@ -235,6 +239,9 @@ Once those changes are made run the script by running the following command:
 ```bash
 python runanim_streptomyces.py
 ```
+
+This will eventually generate results directly in the terminal, as well as in your file called streptomyces_ANIb_results
+
 ### running ANIm for *Streptococcus*
 For *Streptococcus*, follow the instructions as seen in the *Mycobacterium* run, and implement the following changes to the code:
 
@@ -256,6 +263,7 @@ Once those changes are made run the script by running the following command:
 python runanim_streptococcus.py
 ```
 
+This will eventually generate results directly in the terminal, as well as in your file called streptococcus_ANIb_results
 
 ### OrthoANI
 
@@ -270,11 +278,7 @@ Steps to install:
 3. conda activate orthoani_env
 4. conda install -c bioconda blast -y
 
-
-
 ---
-
-
 
 ## FastANI + skani
 
@@ -328,7 +332,7 @@ Each script expects a folder of `.fna` genome files. The script will automatical
 ### Output
 Results are saved to the specified output directory as `dashing2_output.txt` — a symmetric pairwise similarity matrix where each value represents the Jaccard similarity between two genomes.
 
-### MASH
+## MASH
 Mash produces distance values that approximate ANI
 
 conda create -n mash_env -y
@@ -407,6 +411,26 @@ python runsourmash_streptomyces.py
 This will output the results in the folder streptococcus_SourMASH_results
 
 ---
+
+References
+Baker DN, Langmead B. Dashing: fast and accurate genomic distances with HyperLogLog. Genome Biol. 2019 Dec 4;20(1):265. doi: 10.1186/s13059-019-1875-0. PMID: 31801633; PMCID: PMC6892282.
+
+Chung NC, Miasojedow B, Startek M, Gambin A. Jaccard/Tanimoto similarity test and estimation methods for biological presence-absence data. BMC Bioinformatics. 2019 Dec 24;20(Suppl 15):644. doi: 10.1186/s12859-019-3118-5. PMID: 31874610; PMCID: PMC6929325.
+
+Jain C, Rodriguez-R LM, Phillippy AM, Konstantinidis KT, Aluru S. High throughput ANI analysis of 90K prokaryotic genomes reveals clear species boundaries. Nat Commun. 2018 Nov 30;9(1):5114. doi: 10.1038/s41467-018-07641-9. PMID: 30504855; PMCID: PMC6269478.
+
+Lee I, Ouk Kim Y, Park SC, Chun J. OrthoANI: An improved algorithm and software for calculating average nucleotide identity. Int J Syst Evol Microbiol. 2016 Feb;66(2):1100-1103. doi: 10.1099/ijsem.0.000760. Epub 2015 Nov 9. PMID: 26585518.
+
+O’Leary NA, Cox E, Holmes JB, Anderson WR, Falk R, Hem V, Tsuchiya MTN, Schuler GD, Zhang X, Torcivia J, Ketter A, Breen L, Cothran J, Bajwa H, Tinne J, Meric PA, Hlavina W, Schneider VA. Exploring and retrieving sequence and metadata for species across the tree of life with NCBI Datasets. Sci Data. 2024 Jul 5;11(1):732. doi: 10.1038/s41597-024-03571-y. PMID: 38969627; PMCID: PMC11226681. 
+
+Ondov BD, Treangen TJ, Melsted P, Mallonee AB, Bergman NH, Koren S, Phillippy AM. Mash: fast genome and metagenome distance estimation using MinHash. Genome Biol. 2016 Jun 20;17(1):132. doi: 10.1186/s13059-016-0997-x. PMID: 27323842; PMCID: PMC4915045.
+
+Pierce NT, Irber L, Reiter T, Brooks P, Brown CT. Large-scale sequence comparisons with sourmash. F1000Res. 2019 Jul 4;8:1006. doi: 10.12688/f1000research.19675.1. PMID: 31508216; PMCID: PMC6720031.
+
+Richter M, Rosselló-Móra R, Oliver Glöckner F, Peplies J. JSpeciesWS: a web server for prokaryotic species circumscription based on pairwise genome comparison. Bioinformatics. 2016 Mar 15;32(6):929-31. doi: 10.1093/bioinformatics/btv681. Epub 2015 Nov 16. PMID: 26576653; PMCID: PMC5939971.
+
+Shaw J, Yu YW. Fast and robust metagenomic sequence comparison through sparse chaining with skani. Nat Methods. 2023 Nov;20(11):1661-1665. doi: 10.1038/s41592-023-02018-3. Epub 2023 Sep 21. PMID: 37735570; PMCID: PMC10630134.
+
 
 National Center for Biotechnology Information
 National Library of Medicine
