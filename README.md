@@ -97,6 +97,11 @@ conda install -c bioconda pyani dashing
 ```
 Once you have added all your channels and installed bioconda pyani dashing, you should be ready to test your sourMASH tools (refer to the section below labelled sourMASH)
 
+To deactivate the environment run this command: 
+```bash
+conda deactivate
+```
+
 ## Tools to Find Different ANI scores
 
 ## ANIb and ANIm
