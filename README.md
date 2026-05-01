@@ -3,7 +3,7 @@
 The following sections show how to run the different ANI tools to compare different .fna files within 3 genomes: streptococcus, streptomyces, and mycobacterium. Scores with a 
 ---
 
-## Downloading Genome Files
+## Clone the Repo
 To use the ANI tools in this repository, you will first need to download the genome files. Clone the full repository using the following command:
 
 ```bash
@@ -53,6 +53,7 @@ After activating your terminal you should see that your (base) has changed to (p
 
 <img width="402" height="43" alt="Screen Shot 2026-05-01 at 9 09 01 AM" src="https://github.com/user-attachments/assets/9a296dab-c16a-4d26-8be5-d9322adfeada" />
 
+
 It is necessary to activate three channels in the pyani_env to run the ANI tools. Follow the steps below: 
 
 ```bash
@@ -84,6 +85,7 @@ After activating the sourmash_env you should see that your (base) has changed to
 
 <img width="380" height="33" alt="Screen Shot 2026-05-01 at 2 28 49 PM" src="https://github.com/user-attachments/assets/6d5b35ed-b855-4dfe-8100-08e751c0c211" />
 
+
 If you have not already configured and installed the following, as done for the ANIb and ANIm tools, it is necessary to add the following channles to your conda environment to run sourMASH:
 
 ```bash
@@ -99,7 +101,36 @@ Once you have added all your channels and installed bioconda pyani dashing, you 
 ## ANIb and ANIm
 ANIb is a BLASTn based ANI tool to find average nucleotide identity between different genomes. ANIm is a MUMmer based ANI tool to find average nucleotide identity between different genomes.
 
-The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*.
+The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*. These steps will run assuming you have already cloned the repo (refer to Clone the Repo if you have not already done this)
+
+After you have activated your pyANI_env (refer to Activating the pyANI_env to run ANIb and ANIm for instructions on how to do this), run the following code:
+
+```bash
+cd COMP-383-Design-Doc
+```
+
+```bash
+cd ANIb/runanib_mtb.py
+```
+
+Once you're in the runanib_mtb.py script, you will have to change the input directory to where the three genomes we are using are stored, and also change the output directory. These changes will have to be made on lines 6,7, and 26 of the script. See photo below for specific lines of code you will need to hardcode: 
+
+<img width="976" height="432" alt="Screen Shot 2026-05-01 at 2 49 05 PM" src="https://github.com/user-attachments/assets/9cc05070-1c88-440c-a652-b396ef19f7fd" />
+
+The input directory, line 6's, path should change to "/home/username/COMP-383-Design-Doc/genomes/mtb_3genomes" with your respective username
+
+The output directory, line 7's, path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results" with your respective username 
+
+Line 26's path should change to "/home/username/COMP-383-Design-Doc/ANIb/mtb_ANIb_results/ANIb_percentage_identity.tab" with your respective username
+
+Once you have edited these lines of code, you are ready to run the code by running the following command: 
+```bash
+python runanib_mtb.py
+```
+
+Note: The code might take some time to run, but it will eventually generate results directly in the terminal, as well as in your file called mtb_ANIb_results
+
+These results generate true ANI scores 
 
 ### ANIb
 
