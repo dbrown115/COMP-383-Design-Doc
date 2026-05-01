@@ -38,7 +38,8 @@ To use these different tools, you will have to intsall miniconda onto your termi
 
 After you have installed miniconda onto your mac, you should be ready to create your different environments.
 
-The environment you will need to activate to run ANIb and ANIm is the pyani_env. Follow the insturctions below to activate this environemtn in your terminal.
+### Activating the pyANI_env to run ANIb and ANIm
+The environment you will need to run ANIb and ANIm is the pyani_env. Follow the insturctions below to activate this environemtn in your terminal. (Activation of these environments assumes that you have downloaded miniconda onto your terminal following the instructions from the link above)
 
 ```bash
 conda create --name pyani_env
@@ -49,6 +50,7 @@ conda activate pyani_env
 ```
 
 After activating your terminal you should see that your (base) has changed to (pyani_env) as seen below:
+
 <img width="402" height="43" alt="Screen Shot 2026-05-01 at 9 09 01 AM" src="https://github.com/user-attachments/assets/9a296dab-c16a-4d26-8be5-d9322adfeada" />
 
 It is necessary to activate three channels in the pyani_env to run the ANI tools. Follow the steps below: 
@@ -62,60 +64,16 @@ conda install pyani -y
 
 Once you have added all your channels and installed pyani, you should be ready to test your ANIb and ANIm tools (refer to the section below labelled ANIb and ANIm)
 
-## Tools
+## Tools to Find Different ANI scores
 ## ANIb and ANIm
-To use ANIb and ANIm you would need to install conda. To install conda follow the instructions below: 
-1) go to the miniconda website and download the following packaeg for macOS or Windows (https://www.anaconda.com/docs/getting-started/miniconda/install/overview)
-2) for a mac you will have to run the command curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh in your terminal 
-3) then run: bash ~/Miniconda3-latest-MacOSX-arm64.sh
-4) It will prompt you if you want to initialize with conda init, select Yes (Y)
-5) Once it is done installing you now have to create the pyANI environment
-6) run the command conda create --name pyani_env
-7) then run conda activate pyani_env in your terminal and you should see that you base changed to pyani_env
-8) Then install the necessary channels that we need to run pyANI
-9) run conda config --add channels conda-forge
-10) run conda config --add channels bioconda
-11) run conda config --add channels defaults
-12) run conda install pyani -y
-13) you can verify that the package installed by running average_nucleotide_identity.py --help (this is a built in function for the pyani package)
+ANIb is a BLASTn based ANI tool to find average nucleotide identity between different genomes. ANIm is a MUMmer based ANI tool to find average nucleotide identity between different genomes.
 
-The commands for the installation process can also be found below: 
+The steps below show how to run ANIb with three test genomes in the genera *Mycobacterium*, *Streptoccous*, and *Streptomyces*.
 
-### Installation
-Follow the steps as shown on the miniconda installation website (https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install) and as also listed here: 
-
-```bash
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
-```
-
-```bash
-bash ~/Miniconda3-latest-MacOSX-arm64.sh
-```
-
-conda init --> yes 
-
-```bash
-conda create --name pyani_env
-```
-
-```bash
-conda activte pyani_env
-```
-
-At this point your base should have changed to pyani_env
-
-```bash
-conda config --add channels conda-forg
-conda config --add channels
-conda install pyani -y
-```
-
-```bash
-conda install pyani -y
-```
+### ANIb
 
 
-### OrthoANI
+## OrthoANI
 
 We have identified a bug affecting Mac Safari users. When downloading data from the NCBI Datasets web interface, you may see only this README file after the download has completed (while other files appear to be missing).
 As a workaround to prevent this issue from recurring, we recommend disabling automatic zip archive extraction in Safari until Apple releases a bug fix.
