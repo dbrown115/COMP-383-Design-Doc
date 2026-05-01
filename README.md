@@ -174,7 +174,7 @@ Once those changes are made run the script by running the following command:
 
 ```bash
 python runanib_streptococcus.py
-``
+```
 
 ### OrthoANI
 
