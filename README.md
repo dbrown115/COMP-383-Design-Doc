@@ -412,7 +412,7 @@ This will output the results in the folder streptococcus_SourMASH_results
 
 ---
 
-References
+# References
 
 Baker DN, Langmead B. Dashing: fast and accurate genomic distances with HyperLogLog. Genome Biol. 2019 Dec 4;20(1):265. doi: 10.1186/s13059-019-1875-0. PMID: 31801633; PMCID: PMC6892282.
 
