@@ -39,7 +39,7 @@ To use these different tools, you will have to intsall miniconda onto your termi
 After you have installed miniconda onto your mac, you should be ready to create your different environments.
 
 ### Activating the pyANI_env to run ANIb and ANIm
-The environment you will need to run ANIb and ANIm is the pyani_env. Follow the insturctions below to activate this environemtn in your terminal. (Activation of these environments assumes that you have downloaded miniconda onto your terminal following the instructions from the link above)
+The environment you will need to run ANIb and ANIm is the pyani_env. Follow the insturctions below to activate this environment in your terminal. (Activation of these environments assumes that you have downloaded miniconda onto your terminal following the instructions from the link above)
 
 ```bash
 conda create --name pyani_env
@@ -56,13 +56,44 @@ After activating your terminal you should see that your (base) has changed to (p
 It is necessary to activate three channels in the pyani_env to run the ANI tools. Follow the steps below: 
 
 ```bash
-conda config --ad channels conda-forge
+conda config --add channels conda-forge
 conda config --add channels bioconda
 conda config --add channels defaults
 conda install pyani -y
 ```
 
 Once you have added all your channels and installed pyani, you should be ready to test your ANIb and ANIm tools (refer to the section below labelled ANIb and ANIm)
+
+To deactivate the environment run this command: 
+```bash
+conda deactivate
+```
+
+### Activating the sourmash_env to run sourMASH
+The environment you will need to run sourMASH is sourmash_env. Follow the instructions below to activate this environment. (Activation of these environments assumes that you have downloaded miniconda onto your terminal following the instructions from the link above)
+
+```bash
+conda create -n sourmash_env -c conda-forge -c bioconda sourmash
+```
+
+```bash
+conda activate sourmash_env
+```
+
+After activating the sourmash_env you should see that your (base) has changed to (sourmash_env) as seen below: 
+
+<img width="380" height="33" alt="Screen Shot 2026-05-01 at 2 28 49 PM" src="https://github.com/user-attachments/assets/6d5b35ed-b855-4dfe-8100-08e751c0c211" />
+
+If you have not already configured and installed the following, as done for the ANIb and ANIm tools, it is necessary to add the following channles to your conda environment to run sourMASH:
+
+```bash
+conda config --add channels conda-forge
+conda config --add channels bioconda
+conda config --add channels defaults
+conda install pyani -y
+conda install -c bioconda pyani dashing
+```
+Once you have added all your channels and installed bioconda pyani dashing, you should be ready to test your sourMASH tools (refer to the section below labelled sourMASH)
 
 ## Tools to Find Different ANI scores
 ## ANIb and ANIm
