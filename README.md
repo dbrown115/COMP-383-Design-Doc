@@ -338,7 +338,73 @@ conda install -c bioconda mash -y
 Visit the NCBI Datasets documentation pages:
 https://www.ncbi.nlm.nih.gov/datasets/docs/
 
-### SourMASH 
+## SourMASH 
+sourMASH produces a Jaccard Similarity score by using MinHASH sketches. The following shows how to use the SourMASH tool. 
+
+Below you will find a step by step instruction set for how to run sourMASH with the *Mycobacterium* genomes. The other two genera have a very similar process with just a few changes, so those will be shown as a very broad instruction set.
+
+### running sourMASH with *Mycobacterium* genomes
+First, you need to activate the sourmash_env (refer to the section Activating the sourmash_env to run sourMASH for assistance) 
+
+Once you have your sourmash_env activated run the following code: 
+
+```bash
+cd COMP-383-Design-Doc/sourmash/runsourmash_mtb.py
+```
+
+Once you open up the python file you will have to manually change two parts of the code, the input and output file path. See photo below for where you will have to change the code. 
+<img width="968" height="184" alt="Screen Shot 2026-05-01 at 3 56 48 PM" src="https://github.com/user-attachments/assets/ed526f90-4c98-4f60-8c68-ee660cc60f1d" />
+
+Change the input file name on line 8 to "/home/username/COMP-383-Design-Doc/genomes/mtb_3genomes" with your respective username 
+
+Change the output file name on line 9 to '/home/username/COMP-383-Design-Doc/sourmash/mtb_SourMASH_results" with your respective username
+
+Once those changes have been made, save the script and run the following command
+
+```bash
+python runsourmash_mtb.py
+```
+
+Note: The code might take a few minutes to run, but once it is finished it will output the results in the folder mtb_SourMASH_results.
+
+These results are a Jaccard similarity score, not a true ANI score
+
+### running sourMASH with *Streptomyces* genomes
+For *Streptomyces*, follow the same instructions as the *Mycobacterium* run, but implement the following changes.
+
+```bash
+cd COMP-383-Design-Doc/sourmash/runsourmash_streptomyces.py
+```
+
+Change the input file path to "/home/username/COMP-383-Design-Doc/genomes/streptomyces_3genomes" with your respective username 
+
+Change the output file path to '/home/username/COMP-383-Design-Doc/sourmash/streptomyces_SourMASH_results" with your respective username
+
+Once those changes have been made, save the script and run the following command
+
+```bash
+python runsourmash_streptomyces.py
+```
+This will output the results in the folder streptomyces_SourMASH_results
+
+### running sourMASH with *Streptococcus* genomes 
+For *Streptococcus*, follow the same instructions as the *Mycobacterium* run, but implement the following changes.
+
+```bash
+cd COMP-383-Design-Doc/sourmash/runsourmash_streptococcus.py
+```
+
+Change the input file path to "/home/username/COMP-383-Design-Doc/genomes/streptococcus_3genomes" with your respective username 
+
+Change the output file path to '/home/username/COMP-383-Design-Doc/sourmash/streptococcus_SourMASH_results" with your respective username
+
+Once those changes have been made, save the script and run the following command
+
+```bash
+python runsourmash_streptomyces.py
+```
+
+This will output the results in the folder streptococcus_SourMASH_results
 
 ---
 
